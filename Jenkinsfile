@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Docker Test') {
       steps {
-        println 'Hello, World!'
+        sh 'node -v'
       }
     }
   }
