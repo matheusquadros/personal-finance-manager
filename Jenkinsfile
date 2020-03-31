@@ -11,12 +11,12 @@ pipeline {
           sh 'node --version'
           sh 'yarn install' 
       }
-    },
+    }
     stage('Tests') { 
       steps {
           sh 'echo tests'
       }
-    },
+    }
     stage('Build') { 
       steps {
           sh 'npm run build'
