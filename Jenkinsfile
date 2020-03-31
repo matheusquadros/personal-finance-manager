@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Build') { 
       steps {
-          sh 'yarn --version'
+          sh 'node --version'
           sh 'yarn install' 
       }
     }
