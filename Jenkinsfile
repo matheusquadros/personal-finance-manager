@@ -6,10 +6,20 @@ pipeline {
       }
   }
   stages {
-    stage('Build') { 
+    stage('Startup') { 
       steps {
           sh 'node --version'
           sh 'yarn install' 
+      }
+    },
+    stage('Tests') { 
+      steps {
+          sh 'echo tests'
+      }
+    },
+    stage('Build') { 
+      steps {
+          sh 'npm run build'
       }
     }
   }
