@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Tests') { 
       steps {
-          sh 'echo tests'
+          sh '${packageJSONVersion}_${BUILD_NUMBER}_${BRANCH_NAME}'
       }
     }
     stage('Build') { 
